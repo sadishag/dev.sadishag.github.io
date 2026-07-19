@@ -83,17 +83,14 @@ a:hover {
   border: 0;
 }
 
-/* Section containers */
+/* Section containers — one shared width so every section spans the
+   same edges */
 .section {
   padding: var(--section-padding);
-  max-width: var(--max-width-text);
+  max-width: var(--max-width-wide);
   margin: 0 auto;
   /* keep anchored headings clear of the sticky nav */
   scroll-margin-top: var(--nav-height);
-}
-
-.section--wide {
-  max-width: var(--max-width-wide);
 }
 
 .section__title {

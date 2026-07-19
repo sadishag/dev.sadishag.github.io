@@ -5,7 +5,7 @@ import styles from "./Projects.module.css";
 
 export default function Projects() {
   return (
-    <section id="projects" className="section section--wide">
+    <section id="projects" className="section section">
       <h2 className="section__title">Projects</h2>
       <hr className="section__rule" />
       <ul className={styles.grid} role="list">

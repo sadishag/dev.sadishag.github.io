@@ -13,7 +13,7 @@ export default function Photography() {
   };
 
   return (
-    <section id="photography" className="section section--wide">
+    <section id="photography" className="section section">
       <h2 className="section__title">Photography</h2>
       <hr className="section__rule" />
       <ul className={styles.grid} role="list">
