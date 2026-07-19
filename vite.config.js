@@ -1,6 +1,7 @@
+/* eslint-env node */
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
-import svgr from "vite-plugin-svgr";
+import blogPlugin from "./vite-plugin-blog.js";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -9,7 +10,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
 
   return {
-    plugins: [svgr(), react()],
+    plugins: [blogPlugin(), react()],
     base: encodeURI(`/${env.BASE_URL}`),
   };
 });

@@ -1,0 +1,88 @@
+.hero {
+  position: relative;
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.content {
+  animation: fadeInUp 0.8s ease;
+}
+
+.name {
+  font-size: var(--text-hero);
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: var(--text-hero-sub);
+  color: var(--color-muted);
+  margin-top: 16px;
+  /* reserve one line so the typing animation doesn't shift layout */
+  min-height: 28px;
+  line-height: 28px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  margin-top: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.socials a {
+  display: flex;
+  padding: 4px;
+  color: var(--color-muted);
+  transition: color 0.2s;
+}
+
+.socials a:hover {
+  color: var(--color-accent);
+}
+
+.scrollHint,
+.scrollHintHidden {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: var(--color-muted);
+  transition: opacity 0.4s;
+}
+
+.scrollHint {
+  opacity: 0.6;
+}
+
+.scrollHintHidden {
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

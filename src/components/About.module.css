@@ -1,0 +1,15 @@
+.paragraph {
+  line-height: 1.8;
+  color: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.paragraph:last-of-type {
+  margin-bottom: 28px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

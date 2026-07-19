@@ -1,0 +1,45 @@
+.item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.title a {
+  color: var(--color-text);
+  transition: color 0.2s;
+}
+
+.title a:hover {
+  color: var(--color-accent);
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-muted);
+  flex-shrink: 0;
+}
+
+.excerpt {
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-top: 6px;
+}

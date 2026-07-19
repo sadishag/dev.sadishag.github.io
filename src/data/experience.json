@@ -1,0 +1,53 @@
+{
+  "roles": [
+    {
+      "company": "Manulife",
+      "url": "https://www.manulife.ca",
+      "role": "Lead Full Stack Engineer",
+      "period": "2019 – Present",
+      "current": true,
+      "details": [
+        "Built out the Manulife Group Benefits website",
+        "Technical lead for Group Benefits member web experiences",
+        "Implemented new features across React and Node.js services",
+        "Led and coached cohorts in Manulife University",
+        "Mentored engineers on Azure Cloud and engineering practices",
+        "Adopted GitOps with Flux for Kubernetes deployments"
+      ],
+      "tech": ["React", "Node.js", "GraphQL", "Kubernetes", "Helm", "Azure", "Terraform", "Flux"]
+    },
+    {
+      "company": "RBC",
+      "url": "https://www.rbc.com",
+      "role": "Software Developer",
+      "period": "2017 – 2019",
+      "current": false,
+      "details": [
+        "Deployed and maintained the API Gateway platform",
+        "Built custom CI/CD pipelines for API deployments",
+        "Created shared OAuth/OpenID Connect authorization flows",
+        "Maintained shared logging infrastructure on Apigee"
+      ],
+      "tech": ["Python", "Java", "Ansible", "Jenkins", "Apigee", "Bash"]
+    },
+    {
+      "company": "BlackBerry",
+      "url": "https://www.blackberry.com",
+      "role": "Software Development Student",
+      "period": "2016 – 2017",
+      "current": false,
+      "details": [
+        "Built RESTful APIs for BlackBerry CloudConsole 2.0",
+        "Developed dashboards for chargeback and OS patch monitoring",
+        "Integrated Kafka and Grafana for observability"
+      ],
+      "tech": ["Java", "REST APIs", "Kafka", "Grafana"]
+    }
+  ],
+  "education": [
+    {
+      "school": "McMaster University",
+      "credential": "B.Eng — Software Engineering & Co-op"
+    }
+  ]
+}
