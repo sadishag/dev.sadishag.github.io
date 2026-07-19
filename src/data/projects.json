@@ -12,12 +12,6 @@
     "link": null
   },
   {
-    "name": "DeltaHacks",
-    "desc": "Co-President of McMaster's largest hackathon. Organized the 10th anniversary event with 500+ participants.",
-    "tech": ["Leadership", "Event Ops", "Community"],
-    "link": "https://deltahacks.com"
-  },
-  {
     "name": "Asset Tracking CMDB",
     "desc": "Configuration management platform for asset tracking. Created adoption courseware and onboarding documentation.",
     "tech": ["CMDB", "Documentation", "Training"],
