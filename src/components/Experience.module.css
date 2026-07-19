@@ -134,3 +134,13 @@
   font-size: 13px;
   color: var(--color-muted);
 }
+
+/* Below tablet, stack the period under the company/role instead of
+   letting it sit to the right and wrap only when it runs out of room. */
+@media (max-width: 768px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
