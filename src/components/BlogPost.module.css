@@ -1,0 +1,40 @@
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  margin-bottom: 32px;
+}
+
+.back:hover {
+  color: var(--color-accent);
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: var(--text-section);
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.notFound p {
+  color: var(--color-muted);
+  margin-top: 12px;
+}

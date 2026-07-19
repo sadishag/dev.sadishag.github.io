@@ -1,0 +1,136 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  display: flex;
+  gap: 20px;
+}
+
+.rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 20px;
+}
+
+.dot,
+.dotCurrent {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.dot {
+  border: 2px solid var(--color-border);
+}
+
+.dotCurrent {
+  background: var(--color-accent);
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background: var(--color-border);
+  margin-top: 4px;
+}
+
+.body,
+.bodyLast {
+  flex: 1;
+  padding-bottom: 32px;
+}
+
+.bodyLast {
+  padding-bottom: 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.company {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.company:hover {
+  color: var(--color-accent);
+}
+
+.role {
+  color: var(--color-muted);
+  font-size: var(--text-small);
+  margin-left: 12px;
+}
+
+.period {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.toggle {
+  color: var(--color-accent);
+  font-size: 13px;
+  padding: 4px 0;
+  margin-top: 4px;
+}
+
+.toggle:hover {
+  color: var(--color-accent-hover);
+}
+
+.details {
+  margin-top: 8px;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.bullets li {
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.education {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+  padding: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.school {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.credential {
+  font-size: 13px;
+  color: var(--color-muted);
+}

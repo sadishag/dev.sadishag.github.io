@@ -1,0 +1,26 @@
+[
+  {
+    "name": "sadishagalappatti.ca",
+    "desc": "Personal website built with React and Vite, deployed via GitHub Actions to GitHub Pages.",
+    "tech": ["React", "Vite", "GitHub Pages", "CI/CD"],
+    "link": "https://sadishagalappatti.ca"
+  },
+  {
+    "name": "Drive-Thru SPA",
+    "desc": "A library for web frameworks that watches for changes and seamlessly hot-updates the application. Built at YHACK (Yale).",
+    "tech": ["JavaScript", "SPA", "HMR", "Hackathon"],
+    "link": null
+  },
+  {
+    "name": "DeltaHacks",
+    "desc": "Co-President of McMaster's largest hackathon. Organized the 10th anniversary event with 500+ participants.",
+    "tech": ["Leadership", "Event Ops", "Community"],
+    "link": "https://deltahacks.com"
+  },
+  {
+    "name": "Asset Tracking CMDB",
+    "desc": "Configuration management platform for asset tracking. Created adoption courseware and onboarding documentation.",
+    "tech": ["CMDB", "Documentation", "Training"],
+    "link": null
+  }
+]

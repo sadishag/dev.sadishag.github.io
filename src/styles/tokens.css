@@ -1,0 +1,70 @@
+/*
+ * Design tokens — "The Workshop"
+ * Single source of truth: rebuild/specs/sadishagalappatti-website-rebuild-plan.md §3
+ *
+ * Theme resolution: an inline script in index.html sets data-theme="light|dark"
+ * on <html> before first paint. The prefers-color-scheme block below is a
+ * no-JS fallback only.
+ */
+
+:root {
+  /* Color — light ("Warm White" workshop) */
+  --color-bg: #faf9f7; /* Warm White */
+  --color-surface: #f0eeeb; /* Parchment */
+  --color-text: #1a1a1a; /* Near Black */
+  --color-muted: #6b6b6b; /* Graphite */
+  --color-accent: #2563eb; /* Engineering Blue */
+  --color-accent-hover: #1d4ed8; /* Deep Blue */
+  --color-border: #e2e0dc; /* Ash */
+  --color-nav-bg: rgba(250, 249, 247, 0.92);
+  --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  /* Typography */
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Type scale (desktop → mobile via clamp) */
+  --text-hero: clamp(2rem, 6vw, 3rem); /* 32 → 48px */
+  --text-hero-sub: clamp(1rem, 2.5vw, 1.25rem); /* 16 → 20px */
+  --text-section: clamp(1.5rem, 4vw, 2rem); /* 24 → 32px */
+  --text-card-title: 1.25rem; /* 20px */
+  --text-body: 1rem; /* 16px */
+  --text-small: 0.875rem; /* 14px */
+  --text-code: 0.875rem; /* 14px */
+
+  /* Layout */
+  --max-width-text: 720px;
+  --max-width-wide: 1080px;
+  --nav-height: 56px;
+  --section-padding: 80px 24px;
+  --radius-card: 12px;
+  --radius-chip: 999px;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #111111; /* Ink */
+  --color-surface: #1a1a1a; /* Charcoal */
+  --color-text: #ebebeb;
+  --color-muted: #999999;
+  --color-accent: #3b82f6;
+  --color-accent-hover: #60a5fa;
+  --color-border: #2a2a2a;
+  --color-nav-bg: rgba(17, 17, 17, 0.92);
+  --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* No-JS fallback: follow the OS when no explicit choice is set */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #111111;
+    --color-surface: #1a1a1a;
+    --color-text: #ebebeb;
+    --color-muted: #999999;
+    --color-accent: #3b82f6;
+    --color-accent-hover: #60a5fa;
+    --color-border: #2a2a2a;
+    --color-nav-bg: rgba(17, 17, 17, 0.92);
+    --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}

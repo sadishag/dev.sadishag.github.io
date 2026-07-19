@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sadisha Galappatti</title>
+    <script>
+      // GitHub Pages SPA fallback (spa-github-pages technique):
+      // rewrite /blog/foo → /?/blog/foo and let index.html restore it.
+      // Prod serves from the domain root; the QA/dev site serves under
+      // /dev.sadishag.github.io/ — detect which so the base is preserved.
+      (function (l) {
+        var segmentsToKeep = l.pathname.indexOf("/dev.sadishag.github.io") === 0 ? 1 : 0;
+        l.replace(
+          l.protocol +
+            "//" +
+            l.hostname +
+            (l.port ? ":" + l.port : "") +
+            l.pathname.split("/").slice(0, 1 + segmentsToKeep).join("/") +
+            "/?/" +
+            l.pathname
+              .slice(1)
+              .split("/")
+              .slice(segmentsToKeep)
+              .join("/")
+              .replace(/&/g, "~and~") +
+            (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+            l.hash
+        );
+      })(window.location);
+    </script>
+  </head>
+  <body></body>
+</html>
