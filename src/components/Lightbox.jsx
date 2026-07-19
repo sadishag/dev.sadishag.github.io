@@ -53,7 +53,7 @@ export default function Lightbox({ photos, index, onClose, onNavigate }) {
       </button>
       <figure className={styles.figure}>
         {photo.src ? (
-          <img src={photo.src} alt={photo.alt} className={styles.image} />
+          <img src={import.meta.env.BASE_URL + photo.src} alt={photo.alt} className={styles.image} />
         ) : (
           <div
             className={styles.placeholder}

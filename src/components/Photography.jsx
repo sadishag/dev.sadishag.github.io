@@ -30,16 +30,23 @@ export default function Photography() {
               aria-label={`View ${photo.alt}`}
             >
               {photo.src ? (
-                <img src={photo.src} alt="" loading="lazy" className={styles.image} />
+                <img
+                  src={import.meta.env.BASE_URL + photo.src}
+                  alt=""
+                  loading="lazy"
+                  className={styles.image}
+                />
               ) : null}
               <span className={styles.label}>{photo.alt}</span>
             </button>
           </li>
         ))}
       </ul>
-      <p className={styles.note}>
-        Placeholder tiles — real photographs coming soon.
-      </p>
+      {photos.some((photo) => !photo.src) && (
+        <p className={styles.note}>
+          Placeholder tiles — real photographs coming soon.
+        </p>
+      )}
       {openIndex !== null && (
         <Lightbox
           photos={photos}

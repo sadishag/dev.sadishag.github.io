@@ -1,8 +1,38 @@
 [
-  { "src": null, "color": "#8B7355", "aspect": "4/3", "alt": "Golden Hour" },
-  { "src": null, "color": "#4A6741", "aspect": "3/4", "alt": "Forest Path" },
-  { "src": null, "color": "#5B7C99", "aspect": "16/9", "alt": "Harbour" },
-  { "src": null, "color": "#9B8B7A", "aspect": "1/1", "alt": "Architecture" },
-  { "src": null, "color": "#6B5B73", "aspect": "4/3", "alt": "City Lights" },
-  { "src": null, "color": "#7A8B6B", "aspect": "3/4", "alt": "Botanical" }
+  {
+    "src": "photos/golden-hour.jpg",
+    "color": "#8B7355",
+    "aspect": "4/3",
+    "alt": "Golden Hour"
+  },
+  {
+    "src": null,
+    "color": "#4A6741",
+    "aspect": "3/4",
+    "alt": "Forest Path"
+  },
+  {
+    "src": null,
+    "color": "#5B7C99",
+    "aspect": "16/9",
+    "alt": "Harbour"
+  },
+  {
+    "src": null,
+    "color": "#9B8B7A",
+    "aspect": "1/1",
+    "alt": "Architecture"
+  },
+  {
+    "src": null,
+    "color": "#6B5B73",
+    "aspect": "4/3",
+    "alt": "City Lights"
+  },
+  {
+    "src": null,
+    "color": "#7A8B6B",
+    "aspect": "3/4",
+    "alt": "Botanical"
+  }
 ]
