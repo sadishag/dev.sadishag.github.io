@@ -12,7 +12,7 @@
     "alt": "Forest Path"
   },
   {
-    "src": null,
+    "src": "photos/harbour.jpg",
     "color": "#5B7C99",
     "aspect": "16/9",
     "alt": "Harbour"
@@ -24,7 +24,7 @@
     "alt": "Architecture"
   },
   {
-    "src": null,
+    "src": "photos/city-lights.jpg",
     "color": "#6B5B73",
     "aspect": "4/3",
     "alt": "City Lights"

@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import styles from "./Nav.module.css";
 
-const SECTIONS = ["About", "Experience", "Projects", "Video", "Photography", "Blog"];
+const SECTIONS = ["About", "Experience", "Projects", "Photography", "Videography", "Blog"];
 
 // On the home page, section links are native anchors (smooth scroll).
 // On other routes they become router Links back to "/" with a hash,
