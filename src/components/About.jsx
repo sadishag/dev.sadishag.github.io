@@ -21,7 +21,7 @@ export default function About() {
         infrastructure at RBC and cut my teeth on microservices at BlackBerry.
       </p>
       <p className={styles.paragraph}>
-        Outside of engineering, I co-founded and presided over DeltaHacks —
+        Outside of engineering, I&apos;ve spoken at DeltaHacks —
         McMaster&apos;s largest hackathon — and I&apos;m usually behind a camera when
         I&apos;m not behind a keyboard.
       </p>
